@@ -1,10 +1,5 @@
-# encodingTest
+# utf8Guard
 
-## Execute  
+Ever had a file that should contain only valid utf8 characters, but for some reason invalid unicode codepoints are in?
+This little tool comes to the rescue. It substitues all those invalid stuff with a valid dummy character. 
 
-* Run `stack exec -- encodingTest-exe` to see "We're inside the application!"
-* With `stack exec -- encodingTest-exe --verbose` you will see the same message, with more logging.
-
-## Run tests
-
-`stack test`

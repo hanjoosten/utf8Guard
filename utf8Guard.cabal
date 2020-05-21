@@ -4,13 +4,13 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e254cc937334827eb1c9e6f050d5ebff4392c688fc48e98d4ba939e3b262fd5f
+-- hash: 35ea6b80b972fc51d885abf9878fb59856c5d6f116764b70244c92ab2c376819
 
-name:           encodingTest
+name:           utf8Guard
 version:        0.1.0.0
-description:    Please see the README on Github at <https://github.com/hanjoosten/encodingTest#readme>
-homepage:       https://github.com/hanjoosten/encodingTest#readme
-bug-reports:    https://github.com/hanjoosten/encodingTest/issues
+description:    Please see the README on Github at <https://github.com/hanjoosten/utf8Guard#readme>
+homepage:       https://github.com/hanjoosten/utf8Guard#readme
+bug-reports:    https://github.com/hanjoosten/utf8Guard/issues
 author:         Han Joosten
 maintainer:     han.joosten.han@gmail.com
 copyright:      Han Joosten
@@ -23,7 +23,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/hanjoosten/encodingTest
+  location: https://github.com/hanjoosten/utf8Guard
 
 library
   exposed-modules:
@@ -32,7 +32,7 @@ library
       Types
       Util
   other-modules:
-      Paths_encodingTest
+      Paths_utf8Guard
   hs-source-dirs:
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wpartial-fields -Wredundant-constraints
@@ -41,32 +41,32 @@ library
     , rio >=0.1.12.0
   default-language: Haskell2010
 
-executable encodingTest-exe
+executable utf8Guard
   main-is: Main.hs
   other-modules:
-      Paths_encodingTest
+      Paths_utf8Guard
   hs-source-dirs:
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.11 && <10
-    , encodingTest
     , optparse-simple
     , rio >=0.1.12.0
+    , utf8Guard
   default-language: Haskell2010
 
-test-suite encodingTest-test
+test-suite utf8Guard-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
       UtilSpec
-      Paths_encodingTest
+      Paths_utf8Guard
   hs-source-dirs:
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.11 && <10
-    , encodingTest
     , hspec
     , rio >=0.1.12.0
+    , utf8Guard
   default-language: Haskell2010

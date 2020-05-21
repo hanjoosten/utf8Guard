@@ -6,12 +6,12 @@ import Import
 import Run
 import RIO.Process
 import Options.Applicative.Simple
-import qualified Paths_encodingTest
+import qualified Paths_utf8Guard
 
 main :: IO ()
 main = do
   (options, ()) <- simpleOptions
-    $(simpleVersion Paths_encodingTest.version)
+    $(simpleVersion Paths_utf8Guard.version)
     "Header for command line arguments"
     "Program description, also for command line arguments"
     (Options

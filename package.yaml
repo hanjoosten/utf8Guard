@@ -1,6 +1,6 @@
-name:                encodingTest
+name:                utf8Guard
 version:             0.1.0.0
-github:              hanjoosten/encodingTest
+github:              hanjoosten/utf8Guard
 license:             BSD3
 author:              Han Joosten
 maintainer:          han.joosten.han@gmail.com
@@ -11,13 +11,13 @@ extra-source-files:
 - ChangeLog.md
 
 # Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
+synopsis:            Substitute invalid utf8 characters with a valid one.
+category:            tools
 
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on Github at <https://github.com/hanjoosten/encodingTest#readme>
+description:         Please see the README on Github at <https://github.com/hanjoosten/utf8Guard#readme>
 
 dependencies:
 - base >= 4.11 && < 10
@@ -36,11 +36,11 @@ library:
   source-dirs: src
 
 executables:
-  encodingTest-exe:
+  utf8Guard:
     main:                Main.hs
     source-dirs:         app
     dependencies:
-    - encodingTest
+    - utf8Guard
     - optparse-simple
 
     ghc-options:
@@ -49,11 +49,11 @@ executables:
     - -with-rtsopts=-N
 
 tests:
-  encodingTest-test:
+  utf8Guard-test:
     main:                Spec.hs
     source-dirs:         test
     dependencies:
-    - encodingTest
+    - utf8Guard
     - hspec
 
     ghc-options:
