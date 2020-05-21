@@ -4,11 +4,13 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 35ea6b80b972fc51d885abf9878fb59856c5d6f116764b70244c92ab2c376819
+-- hash: 6f0b9f204ea359d14ce19915f66c2886372f129d0282e63b117a863314391d8b
 
 name:           utf8Guard
 version:        0.1.0.0
+synopsis:       Substitute invalid utf8 characters with a valid one.
 description:    Please see the README on Github at <https://github.com/hanjoosten/utf8Guard#readme>
+category:       tools
 homepage:       https://github.com/hanjoosten/utf8Guard#readme
 bug-reports:    https://github.com/hanjoosten/utf8Guard/issues
 author:         Han Joosten
